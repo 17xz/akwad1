@@ -1,0 +1,16 @@
+.con{
+    height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding-top:550px;
+
+}
+
+
+.buttons{
+    margin: 1rem;
+    font-size: 30px;
+}
+.button:hover{
+    transform:scale(1.3);}

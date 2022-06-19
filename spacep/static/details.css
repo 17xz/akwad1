@@ -1,0 +1,84 @@
+*{
+ margin:0px;
+ padding:0px;
+ box-sizing:border-box;
+}
+body{
+ font-family:"Roboto",sans-serif;
+ background:#f0f2f7;
+}
+.container{
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);}
+ 
+
+
+ label{
+    padding:10px;
+    font-size:18px;
+    color:#111;
+    padding-top: 5%;
+ }
+    .copy-text{
+    position:relative;
+    padding:10px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    display:flex;
+    }
+
+
+    .copy-text input.text{
+     padding:10px;
+    font-size:18px;
+    color:#555;
+     border:none;
+     outline:none;
+     pointer-events:none;
+    }
+
+     .copy-text button{
+        padding:10px;
+        background:rgb(21, 226, 124);
+        color:#fff;
+        font-size:18px;
+        border:none;
+        outline:none;
+        border-radius:10px;
+         cursor:pointer;
+       }
+       .copy-text button:active{
+        background:rgb(21, 226, 124);
+        margin: 1rem;
+    }
+
+
+        header{
+            background-color: rgb(43, 43, 43);
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px;
+            
+        }
+        .logo{
+            text-decoration: none;
+            color:rgb(21, 226, 124);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+        }
+        
+        .navbar a{
+            text-decoration: none;
+            color:rgb(21, 226, 124);
+            font-size: 1.1em;
+            font-weight: 500;
+            padding-left: 30px;
+        }

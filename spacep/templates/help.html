@@ -1,0 +1,46 @@
+
+{% load static %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="{%static 'help.css'%}"/>
+<header>
+
+  <a  href="http://127.0.0.1:8000/" class="logo"style="font-family: 'El Messiri', sans-serif;font-size:40px;">اكواد</a>
+  <nav class="navbar">
+  <a href="#contact">مساعده</a>
+
+  </nav>
+</header>
+<section>
+    <div class="container">
+        <form
+        action="https://formspree.io/f/xgerkbgr"
+        method="POST"
+      >
+  
+        <div class="form-group">
+          <label for="firstName"> الاسم</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="latsName">نوع المشكله</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">البريد الالكتروني</label>
+          <input type="email" id="email" name="email">
+        </div>
+  
+        <div class="form-group">
+          <label for="massage">شرح المشكله</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+        </div>
+  
+        <button type="submit">ارسال</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>

@@ -1,0 +1,98 @@
+.copy-text button{
+    padding:10px;
+    background:rgb(21, 226, 124);
+    color:#fff;
+    font-size:18px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+     cursor:pointer;
+   }
+   .copy-text button:active{
+    background:rgb(21, 226, 124);
+    margin: 1rem;
+}
+
+    header{
+        background-color: rgb(43, 43, 43);
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 200px;
+        
+    }
+    .logo{
+        text-decoration: none;
+        color:rgb(21, 226, 124);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    .navbar a{
+        text-decoration: none;
+        color:rgb(21, 226, 124);
+        font-size: 25px;
+        font-weight: 500;
+        padding-left: 30px;
+        font-family: 'Vazirmatn', sans-serif;
+    }
+    @media(max-width:1023px){
+        header{padding:12px 20px}
+        .navbar a{padding-left: 1px;}
+        .title{font-size: 1.8em;}
+        .container{padding: 80px 20px;}
+        .container{flex-direction: column;align-items: center;}
+
+        .content{flex-direction: column;align-items: center;}
+      
+    }
+
+
+
+.projects .content{
+    margin-top: 50px;
+}
+.project-card{
+    background-color: rgb(37, 12, 12);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    transform: 0.7s ease;
+    background-color:rgb(21, 226, 124);
+
+
+}
+.project-image img{
+    width: 100%;
+}
+.projects{padding-top: 50px;
+    
+
+}
+.project-info{
+    padding: 1em;
+}
+
+.datels{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+}
+.footer{background-color:rgb(21, 226, 124) ;}
+
+.content{
+    padding: 80px;
+}
+
+.footer{background-color:rgb(21, 226, 124) ;}

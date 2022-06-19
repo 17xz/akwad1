@@ -1,0 +1,47 @@
+{% load static %}
+<link rel="stylesheet" href="{%static 'style.css'%}"/>
+<link rel="stylesheet" href="{%static 'footer.css'%}"/>
+<link rel="stylesheet" href="{%static 'projects.css'%}"/>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet"> 
+<body>
+    <header>
+
+        <a  href="http://127.0.0.1:8000/" class="logo"style="font-family: 'El Messiri', sans-serif;font-size:40px;">اكواد</a>
+        <nav class="navbar">
+        <a href="http://127.0.0.1:8000/help">مساعده</a>
+     
+        </nav>
+    </header>
+    
+   <!-- <article>
+    <a href="#"class="image"><img src="{{ Imges.image.url }}" alt="img" /></a>
+    <h3>{{ Imges.title }}</h3>
+    <p>{{Imges.desc}}</p>
+    <ul class="actions">
+        <li><a href="#" class="button">More</a></li>
+    </ul></article>-->
+
+
+ <div class="container">
+<section class="projects"id="projects">
+  
+
+    <div class="content">{%for Imges in object_list%}
+         <div class="project-card">
+              <div class="project-image">
+                 <a href="#"> <img src="{{ Imges.image.url }}" /></a>
+              </div>
+             <div class="project-info">
+                <h2 class="title" >{{Imges.title}}</h2>
+            <strong class="project-title"><span>{{Imges.desc}}</span>
+                <br/>
+            <a href="{% url 'test1:details' Imges.id %}" class="datels">more</a>
+            </strong>
+            </div>
+         </div>
+   {%endfor%} </div>
+</section></div>
+<footer class="footer">
+    <p> Copyright @<span>akwad</span></p>
+</footer>
+</body>

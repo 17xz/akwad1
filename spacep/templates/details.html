@@ -1,0 +1,98 @@
+
+{% load static %}
+<link rel="stylesheet" href="{%static 'details.css'%}"/>
+<link rel="stylesheet" href="{%static 'button.css'%}"/>
+<link rel="stylesheet" href="{%static 'projects.css'%}"/>
+
+<link rel="stylesheet" href="{%static 'notwrk.js'%}"/>
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet"> 
+
+<!--
+  <center> <h1></h1></center> 
+-->
+<header>
+
+  <a href="http://127.0.0.1:8000/" class="logo"style="font-family: 'El Messiri', sans-serif;font-size:40px;">اكواد</a>
+  <nav class="navbar">
+  <a href="http://127.0.0.1:8000/help">مساعده</a>
+
+  </nav>
+
+</header>
+
+
+
+  
+<div class="container">
+  <div href="" class="label" style=" padding: 5%; font-size: 30px;font-family: 'Changa', sans-serif;">
+    <a href="https://wa.me/?text=لتحصل على خصم {{Imges.title}} جرب كود http://127.0.0.1:8000/details/7/"><i class="fa-brands fa-whatsapp" style="text-decoration: none;color:black; "></i></a>
+  </div>
+
+  <div class="label" style=" padding: 5%; font-size: 30px;font-family: 'Changa', sans-serif;">
+  {{Imges.title}}<br/>{{Imges.desc}}<br/>  أنسخ الكود
+  </div>
+  <div class="copy-text">
+    <input type="text"class="text" value="{{Imges.code}}" autocomplete="off">
+    <button>
+      <i class="fa fa-clone"></i>
+    </button>
+  </div>
+</div>
+
+
+<div class="con" href="#">
+  <span class="buttons" ></span>
+ 
+
+  
+</div>
+
+
+<!--
+<section>
+<form
+  action="https://formspree.io/f/xgerkbgr"
+  method="POST"
+>
+<div class="container"></div>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <button type="submit">Send</button>
+</form></section>
+-->
+
+<div class="con" href="#">
+
+<script>let copyText=document.querySelector(".copy-text");
+  copyText.querySelector("button").addEventListener("click",function(){
+    let input=copyText.querySelector("input.text");
+    input.select();
+    document.execCommand("copy");
+    copyText.classList.add("active");
+    window.getSelection().removeA11Ranges();
+    setTimeout(function(){
+      copyText.classList.remove("active");
+    },2500);
+  });</script>
+  
+  <footer class="footer">
+  <p> Copyright @<span>akwad</span></p>
+</footer>
